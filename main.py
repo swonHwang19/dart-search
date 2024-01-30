@@ -5,7 +5,7 @@ import snowflake.connector
 from snowflake.connector.errors import DatabaseError, ProgrammingError
 import pandas as pd
 
-st.title('DART 공시 정보 검색')
+st.title('메가존클라우드 DART 공시 정보 검색 서비스')
 
 # User input for database credentials
 user = os.environ.get('SNOWFLAKE_USER')
