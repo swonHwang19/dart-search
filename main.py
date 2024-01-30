@@ -114,3 +114,7 @@ if corp_code_search:
 
     else:
         st.write("에러가 발생했습니다")
+
+
+st.markdown("####")
+st.write("mzcsaas@mz.co.kr")
