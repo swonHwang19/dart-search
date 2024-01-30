@@ -9,14 +9,13 @@ import pandas as pd
 st.title('DART 공시 정보 검색')
 
 # User input for database credentials
-load_dotenv('.env')
-user = os.getenv('SNOWFLAKE_USER')
-password = os.getenv('SNOWFLAKE_PASSWORD')
-account = os.getenv('SNOWFLAKE_ACCOUNT')
+user = os.environ.get('SNOWFLAKE_USER')
+password = os.environ.get('SNOWFLAKE_PASSWORD')
+account = os.environ.get('SNOWFLAKE_ACCOUNT')
 database = 'MZC_APP'
 schema = 'PUBLIC'
 table = 'DART_DATA'
-api_key = os.getenv('API_KEY')
+api_key = os.environ.get('API_KEY')
 
 # Connect to Snowflake
 @st.cache_resource
