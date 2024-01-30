@@ -5,7 +5,7 @@ import snowflake.connector
 from snowflake.connector.errors import DatabaseError, ProgrammingError
 import pandas as pd
 
-st.title('메가존클라우드 DART 공시 정보 검색 서비스')
+st.title('MZC DART 공시 정보 검색 서비스')
 
 # User input for database credentials
 user = os.environ.get('SNOWFLAKE_USER')
@@ -117,4 +117,4 @@ if corp_code_search:
 
 
 st.markdown("####")
-st.write("mzcsaas@mz.co.kr")
+st.write("Created By: mzcsaas@mz.co.kr")
