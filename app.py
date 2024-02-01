@@ -6,14 +6,13 @@ import snowflake.connector
 from snowflake.connector.errors import DatabaseError, ProgrammingError
 import pandas as pd
 
-load_dotenv('.env')
-user = os.getenv('SNOWFLAKE_USER')
-password = os.getenv('SNOWFLAKE_PASSWORD')
-account = os.getenv('SNOWFLAKE_ACCOUNT')
+user = os.environ.get('SNOWFLAKE_USER')
+password = os.environ.get('SNOWFLAKE_PASSWORD')
+account = os.environ.get('SNOWFLAKE_ACCOUNT')
 database = 'MZC_APP'
 schema = 'PUBLIC'
 table = 'DART_DATA'
-api_key = os.getenv('API_KEY')
+api_key = os.environ.get('API_KEY')
 
 def page1():
     st.title('DART 공시 정보 검색')
